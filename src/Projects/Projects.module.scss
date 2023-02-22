@@ -1,0 +1,25 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
+.projectsBlock {
+	padding: 100px 0;
+	min-height: 100vh;
+	background-color: $bgSecondColor;
+	display: flex;
+	flex-wrap: nowrap;
+	.projectsContainer {
+		flex-direction: column;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+	}
+	.projects {
+		display: flex;
+		justify-content: space-between;
+		box-sizing: border-box;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		@media (max-width: 600px) {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+	}
+}

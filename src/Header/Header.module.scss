@@ -1,0 +1,10 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
+.header {
+	height: 80px;
+	background: $bgColor;
+	color: $primaryColor;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}

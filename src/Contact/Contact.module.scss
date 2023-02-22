@@ -1,0 +1,81 @@
+@import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/variables.scss";
+.contact {
+	background: $bgColor;
+	height: 80vh;
+	.contact h3 {
+		margin-bottom: 40px;
+	}
+	.contactContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.contactBlock {
+		width: 80%;
+		height: 60%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contactForm {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.contactInput {
+		margin-bottom: 1rem;
+		background: $bgSecondColor;
+		input:-webkit-autofill,
+		input:-webkit-autofill:hover,
+		input:-webkit-autofill:focus input:-webkit-autofill,
+		textarea:-webkit-autofill,
+		textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+		select:-webkit-autofill,
+		select:-webkit-autofill:hover,
+		select:-webkit-autofill:focus {
+			border: 0;
+			-webkit-text-fill-color: $bgSecondColor;
+		}
+	}
+	.contactButton {
+		cursor: pointer;
+		display: block;
+		@include text($secondaryFont, 14px, 1.2);
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 1px;
+		padding: 7px 20px;
+		transition: all 0.4s ease-in-out 0s;
+		background: transparent;
+		color: $textColor;
+		max-width: 170px;
+		margin: 15px auto;
+		z-index: 1;
+		text-align: center;
+		border-radius: 0px;
+		width: 100%;
+		border: none;
+		position: relative;
+		&:hover {
+			background-color: $primaryColor;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+
+			height: 10px;
+			width: 50%;
+			background: $primaryColor;
+			z-index: -1;
+			bottom: 5px;
+			left: 50%;
+			transform: translate(-50%, 50%);
+			transition: all 0.2s ease-in-out 0s;
+			box-sizing: border-box;
+		}
+	}
+}

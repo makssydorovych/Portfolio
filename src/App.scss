@@ -1,0 +1,8 @@
+@import "./common/styles/sass/variables.scss";
+@import "./common/styles/sass/mixins.scss";
+* {
+	box-sizing: border-box;
+}
+body {
+	@include text($secondaryFont, 14px, 1.8);
+}

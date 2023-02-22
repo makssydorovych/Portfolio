@@ -1,0 +1,32 @@
+@import "../common/styles/sass/variables.scss";
+@import "../common/styles/sass/mixins.scss";
+.footer {
+	background: $bgSecondColor;
+	min-height: 30vh;
+	text-align: center;
+	padding: 40px 0;
+	color: $textColor;
+	.footerContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.footerTitle {
+		@include text($primaryFont, 22px, 1);
+		letter-spacing: 3px;
+		font-weight: 700;
+	}
+	.footerItems {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.footerItem {
+		padding: 10px;
+		text-decoration: none;
+		@include text($secondaryFont, 14px, 1.8);
+	}
+	.copyright {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}

@@ -1,0 +1,23 @@
+@import "../common/styles/sass/mixins.scss";
+@import "../common/styles/sass/variables.scss";
+.title h2 {
+	@include text($primaryFont, 36px, 1.2);
+	margin: 0 0 30px;
+	letter-spacing: 5px;
+	font-weight: 300;
+	color: $textColor;
+	text-transform: capitalize;
+	margin: 30px;
+	position: relative;
+	text-align: center;
+	&::after {
+		content: "";
+		position: absolute;
+		background: $primaryColor;
+		width: 30px;
+		height: 1px;
+		bottom: 0px;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+}
