@@ -6,25 +6,33 @@
 	text-align: center;
 	padding: 40px 0;
 	color: $textColor;
+	@include flex(row, center, stretch, nowrap);
 	.footerContainer {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		@include container();
+		@include flex(column, flex-start, center, nowrap);
+
 	}
 	.footerTitle {
-		@include text($primaryFont, 22px, 1);
+		@include text($primaryFont, 22px, 1, 400);
 		letter-spacing: 3px;
 		font-weight: 700;
 	}
 	.footerItems {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
+
 	}
 	.footerItem {
 		padding: 10px;
 		text-decoration: none;
-		@include text($secondaryFont, 14px, 1.8);
+		align-self: center;
+		@include text($secondaryFont, 14px, 1.8, 400);
+		&:hover{
+			outline: 1px solid $textColor;
+			transition: all 0.3s ease-in-out 0s;
+			box-shadow: 3px 3px $bgColor;
+		}
 	}
 	.copyright {
 		color: rgba(255, 255, 255, 0.5);

@@ -22,9 +22,9 @@ const Projects = () => {
 			<div className={`${styleContainer.container} ${style.projectsContainer}`}>
 				<Title title={"Projects"} />
 				<div className={style.projects}>
-					<Project style={social} title={"Title"} />
-					<Project style={todo} title={"Title"} />
-					<Project style={counter} title={"Title"} />
+					<Project style={social} title={"Title"} text={'view'}/>
+					<Project style={todo} title={"Title"} text={'view'}/>
+					<Project style={counter} title={"Title"} text={'view'}/>
 				</div>
 			</div>
 		</div>

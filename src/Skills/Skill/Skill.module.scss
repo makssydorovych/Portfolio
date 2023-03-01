@@ -6,7 +6,9 @@
 	align-items: center;
 	text-align: center;
 	padding: 20px;
+
 	.iconBox {
+
 		max-width: 340px;
 		margin: 0px auto;
 		transform: rotate(45deg);
@@ -26,9 +28,9 @@
 		transform-origin: center;
 	}
 	.title {
-		@include text($primaryFont, 16px, 1.2);
+		@include text($primaryFont, 16px, 1.2, 400);
 	}
 	.description {
-		@include text($secondaryFont, 14px, 1.8);
+		@include text($secondaryFont, 14px, 1.8, 400);
 	}
 }

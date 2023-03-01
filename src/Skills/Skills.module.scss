@@ -1,6 +1,7 @@
 @import "../common/styles/sass/variables.scss";
 @import "../common/styles/sass/mixins.scss";
 .skillsBlock {
+	position: relative;
 	min-height: 100vh;
 	background: $bgColor;
 	display: flex;
@@ -13,6 +14,7 @@
 		flex-wrap: wrap;
 	}
 	.skills {
+
 		width: 80%;
 		display: flex;
 		justify-content: space-between;

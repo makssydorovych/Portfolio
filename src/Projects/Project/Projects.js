@@ -1,13 +1,13 @@
 import React from "react";
-import style from "./Projects.module.scss";
+import style from "./Project.module.scss";
+import Button from "../../common/styles/button/Button";
 
 const Project = props => {
 	return (
 		<div className={style.project}>
 			<div className={style.projectImg} style={props.style}>
-				<a className={style.viewBtn} href='†'>
-					View
-				</a>
+
+				<Button text={props.text}/>
 			</div>
 			<div className={style.projectInfo}>
 				{" "}

@@ -1,26 +1,53 @@
 @import "../common/styles/sass/mixins.scss";
 @import "../common/styles/sass/variables.scss";
+
 .mainBlock {
-	height: 100vh;
+	min-height: 400px;
 	background: $bgSecondColor;
 	display: flex;
-	.mainContainer {
-		justify-content: space-between;
-		height: 100vh;
-		display: flex;
+	.photo {
+		position: relative;
+		z-index: 1;
+		margin-top: 50px;
+		.image {
+			z-index: 3;
+			height: 400px;
+			width: 300px;
+			@include bgSetting();
+			background-image: url("../assets/images/hero-banner.jpg");
+			background-position: 80% 0;
+
+			&:before {
+				content: "";
+				position: absolute;
+				height: 110%;
+				width: 105%;
+				border: 5px solid $primaryColor;
+				left: 15px;
+				top: -15px;
+				z-index: -1;
+			}
+		}
 	}
+
+	.mainContainer {
+		@include container();
+		@include flex(row, space-around, center, wrap);
+		padding: 100px 0;
+	}
+
 	.text {
 		width: 300px;
-		@include text($secondaryFont, 14px, 1.8);
-		font-weight: 400;
+		@include text($secondaryFont, 14px, 1.8, 400);
 		position: relative;
 
 		& h1 {
-			@include text($primaryFont, 50px, 1.2);
+			@include text($primaryFont, 50px, 1.2, 700);
 			font-weight: 700;
 			z-index: 3;
 			position: relative;
 		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -32,10 +59,5 @@
 			background: $primaryColor;
 			z-index: 1;
 		}
-	}
-	.photo {
-		width: 300px;
-		height: 400px;
-		background-color: aliceblue;
 	}
 }

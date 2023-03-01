@@ -4,5 +4,5 @@
 	box-sizing: border-box;
 }
 body {
-	@include text($secondaryFont, 14px, 1.8);
+	@include text($secondaryFont, 14px, 1.8, 400);
 }

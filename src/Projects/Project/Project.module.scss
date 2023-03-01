@@ -5,6 +5,7 @@
 	align-items: center;
 	background-color: $bgColor;
 	padding: 5px;
+
 	.projectImg {
 		height: 200px;
 		display: flex;
@@ -25,17 +26,11 @@
 			opacity: 0.3;
 		}
 	}
-	.viewBtn {
-		background-color: $primaryColor;
-		padding: 10px 20px;
-		position: relative;
-		z-index: 1;
-		color: $textColor;
-	}
+
 	.projectTitle {
 		letter-spacing: 1px;
 		margin: 0 0 5px;
-		@include text($primaryFont, 16px, 1.2);
+		@include text($primaryFont, 16px, 1.2, 400);
 	}
 	.description {
 		color: $textColor;
