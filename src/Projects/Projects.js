@@ -6,6 +6,7 @@ import styleContainer from "../common/styles/Container.module.css";
 import one from "../assets/images/one.jpg";
 import two from "../assets/images/two.jpg";
 import three from "../assets/images/three.jpg";
+import Fade from "react-reveal/Fade";
 
 const Projects = () => {
 	const social = {
@@ -18,7 +19,8 @@ const Projects = () => {
 		backgroundImage: `url(${three})`,
 	};
 	return (
-		<div className={style.projectsBlock}>
+		<div id="projects" className={style.projectsBlock}>
+			<Fade top>
 			<div className={`${styleContainer.container} ${style.projectsContainer}`}>
 				<Title title={"Projects"} />
 				<div className={style.projects}>
@@ -27,6 +29,7 @@ const Projects = () => {
 					<Project style={counter} title={"Title"} text={'view'}/>
 				</div>
 			</div>
+			</Fade>
 		</div>
 	);
 };

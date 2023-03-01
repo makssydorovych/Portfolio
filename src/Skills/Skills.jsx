@@ -19,7 +19,7 @@ const Skills = () => {
 	const js = <FontAwesomeIcon icon={faJs} />;
 	const node = <FontAwesomeIcon icon={faNodeJs} />;
 	return (
-		<div className={style.skillsBlock}>
+		<div id="skills"className={style.skillsBlock}>
 			<div className={`${styleContainer.container} ${style.skillsContainer}`}>
 				<Title title={"Skills"} />
 				<div className={style.skills}>

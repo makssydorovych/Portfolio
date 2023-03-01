@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div className={style.footer}>
 			<div className={`${styleContainer.container} ${style.footerContainer}`}>
-				<h3 className={style.footerTitle}>Name Surname</h3>
+				<h3 className={style.footerTitle}>Maksym Sydorovych</h3>
 				<div className={style.footerItems}>
 					<a className={style.footerItem} href='#'>
 						GitHub

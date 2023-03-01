@@ -8,12 +8,11 @@ import { loadFull } from "tsparticles";
         await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
-    }, []);
+
     return  <Particles
         id="tsparticles"
         init={particlesInit}
-        loaded={particlesLoaded}
+
         options={{
 
             fpsLimit: 60,

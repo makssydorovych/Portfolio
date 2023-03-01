@@ -6,3 +6,15 @@
 body {
 	@include text($secondaryFont, 14px, 1.8, 400);
 }
+.App{
+	>div{
+		&:nth-child(n){
+			background-color: $bgColor;
+
+		}
+		&:nth-child(2n){
+			background-color: $bgSecondColor;
+
+		}
+	}
+}
