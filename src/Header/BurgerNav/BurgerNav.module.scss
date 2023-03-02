@@ -1,0 +1,84 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.burgerNav {
+  width: 100%;
+  height: 100%;
+  .burgerNavItems {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    @include flex(column, space-between, center, nowrap);
+    transform: translate(0, -100%);
+    transition: 0.7s;
+
+    & a {
+      text-decoration: none;
+      @include text($primaryFont, 18px, 1.8, 400);
+      color: $textColor;
+      cursor: pointer;
+
+      &:hover {
+        color: $primaryColor;
+      }
+
+      @media screen and (max-width: 400px) {
+        @include text($primaryFont, 16px, 1.2, 400);
+      }
+    }
+
+    .active {
+      color: $primaryColor;
+    }
+  }
+
+  .show {
+    transform: translate(0, 0);
+
+  }
+  .line{
+
+  }
+
+  .burgerBtn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: $primaryColor;
+    cursor: pointer;
+    @include flex(column, center, center, nowrap);
+    padding: 0;
+
+    .line {
+      background-color: $textColor;
+      height: 3px;
+      width: 24px;
+      margin: 2px;
+      transition: transform 0.3s ease-in-out;
+
+    }
+
+
+
+    @media screen and (min-width: 400px) {
+      display: none;
+    }
+  }
+  .burgerBtnOpen {
+
+    .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .line:nth-child(2) {
+      opacity: 0;
+    }
+    .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+  }
+}

@@ -27,6 +27,9 @@ const Projects = () => {
 					<Project style={social} title={"Title"} text={'view'}/>
 					<Project style={todo} title={"Title"} text={'view'}/>
 					<Project style={counter} title={"Title"} text={'view'}/>
+					<Project style={social} title={"Title"} text={'view'}/>
+					<Project style={todo} title={"Title"} text={'view'}/>
+					<Project style={counter} title={"Title"} text={'view'}/>
 				</div>
 			</div>
 			</Fade>
