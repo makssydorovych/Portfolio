@@ -6,31 +6,31 @@
 	align-items: center;
 	text-align: center;
 	padding: 20px;
+	flex-basis: calc(25% - 20px);
 
 	.iconBox {
-
-		max-width: 340px;
-		margin: 0px auto;
-		transform: rotate(45deg);
-		height: 80px;
-		width: 80px;
-		margin: 0px auto 30px;
+		margin: 0 auto;
+		width: 120px;
+		height: 120px;
 		background: rgba(255, 255, 255, 0.1);
-		display: block;
-		box-shadow: -6px 10px 40px rgb(0 0 0 / 6%);
+		transform: rotate(45deg) !important;
+		@include flex(row, center, center, wrap)
 	}
 	.icon {
 		color: #4e93e6;
 		line-height: 80px;
-		font-size: 30px;
+		font-size: 60px;
 		text-align: center;
 		transform: rotate(-45deg);
 		transform-origin: center;
+		padding: 5px;
+
+
 	}
 	.title {
-		@include text($primaryFont, 16px, 1.2, 400);
+		@include text($primaryFont, 18px, 1.2, 400);
+		padding: 10px;
+		margin-top: 30px;
 	}
-	.description {
-		@include text($secondaryFont, 14px, 1.8, 400);
-	}
+
 }

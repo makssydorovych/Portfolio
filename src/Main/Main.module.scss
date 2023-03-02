@@ -4,7 +4,7 @@
 .mainBlock {
   min-height: 400px;
   display: flex;
-
+min-height: 100vh;
   span {
     &:nth-child(2) {
       font-size: 14px;
