@@ -16,11 +16,13 @@ const Contact = () => {
     const onSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://email-backend-oz6l3aha8-makssydorovych.vercel.app/sendMessage', data);
-            console.log(response.data);
+            const response = await axios.post('https://email-backend-89wkmls6k-makssydorovych.vercel.app/sendMessage', data);
+
             alert(`Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`);
         } catch (error) {
             console.log(error);
+        }finally {
+            alert(`Name: ${data.name}\nEmail: ${data.email}\nMessage: ${data.message}`);
         }
     };
 
