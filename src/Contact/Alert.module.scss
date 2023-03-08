@@ -1,0 +1,16 @@
+@import "../common/styles/sass/mixins";
+@import "../common/styles/sass/variables";
+.alert {
+    background-color: $bgSecondColor;
+    color: $primaryColor !important;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    @include text($secondaryFont, 20px, 1.8, 400);
+    .alert p {
+        margin: 0;
+    }
+}
+
