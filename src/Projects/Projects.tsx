@@ -25,7 +25,9 @@ const Projects = () => {
 			<div className={`${styleContainer.container} ${style.projectsContainer}`}>
 				<Title title={"Projects"} />
 				<div className={style.projects}>
-					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={todo} title={"Todolist"} text={'view'} description={'Todolist - web-app which helping create todolists with tasks.' +
+						' Which you can mark and display completed and active points, add new and delete tasks and todolists.' +
+						'Also implemented authentication with remember user.'} refs={'https://makssydorovych.github.io/todoList/'}/>
 					<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
 					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
 					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>

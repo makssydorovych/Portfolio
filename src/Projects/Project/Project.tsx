@@ -7,7 +7,8 @@ type PropsType ={
 	text: string,
 	img: { backgroundImage: string},
 	title: string,
-	refs: string
+	refs: string,
+	description?: string
 }
 const Project = (props :PropsType)=> {
 	const [ref, inView] = useInView();
@@ -26,8 +27,7 @@ const Project = (props :PropsType)=> {
 				{" "}
 				<h3 className={style.projectTitle}>{props.title}</h3>
 				<span className={style.description}>
-					lorem lorem loremlorem lorem loremvlorem loremv loremlorem lorem
-					loremloremloremv vlorem
+					{props.description}
 				</span>
 			</div>
 			</animated.div>
