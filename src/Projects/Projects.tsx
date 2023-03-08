@@ -4,17 +4,17 @@ import Project from "./Project/Project";
 import { Title } from "../common/Title";
 import styleContainer from "../common/styles/Container.module.css";
 import todolist from "../assets/images/todo.jpg";
-import holidaze from "../assets/images/holidaze.jpg";
+import hotel from "../assets/images/holidaze.jpg";
 import kidsT from "../assets/images/kids-toys.jpg";
 
 
 const Projects = () => {
 
 	const holidaze = {
-		backgroundImage: `url(${todolist})`,
+		backgroundImage: `url(${hotel})`,
 	};
 	const todo = {
-		backgroundImage: `url(${holidaze})`,
+		backgroundImage: `url(${todolist})`,
 	};
 	const kids = {
 		backgroundImage: `url(${kidsT})`,
@@ -25,12 +25,12 @@ const Projects = () => {
 			<div className={`${styleContainer.container} ${style.projectsContainer}`}>
 				<Title title={"Projects"} />
 				<div className={style.projects}>
-					<Project img={todo} title={"Title"} text={'view'}/>
-					<Project img={kids} title={"Title"} text={'view'}/>
-					<Project img={holidaze} title={"Title"} text={'view'}/>
-					<Project img={todo} title={"Title"} text={'view'}/>
-					<Project img={holidaze} title={"Title"} text={'view'}/>
-					<Project img={kids} title={"Title"} text={'view'}/>
+					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
 				</div>
 			</div>
 

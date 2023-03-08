@@ -6,7 +6,8 @@ import { useInView } from 'react-intersection-observer';
 type PropsType ={
 	text: string,
 	img: { backgroundImage: string},
-	title: string
+	title: string,
+	refs: string
 }
 const Project = (props :PropsType)=> {
 	const [ref, inView] = useInView();
@@ -19,7 +20,7 @@ const Project = (props :PropsType)=> {
 			<animated.div style={slideAnimation}>
 			<div className={style.projectImg} style={props.img}>
 
-				<Button text={props.text}/>
+				<Button refs={props.refs} text={props.text}/>
 			</div>
 			<div className={style.projectInfo}>
 				{" "}
