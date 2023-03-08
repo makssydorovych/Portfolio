@@ -21,7 +21,7 @@ min-height: 100vh;
       height: 400px;
       width: 300px;
       @include bgSetting();
-      background-image: url("../assets/images/hero-banner.jpg");
+      background-image: url("../assets/images/ava.JPG");
       background-position: 80% 0;
       @media screen and (max-width: 680px) {
         height: 300px;
@@ -49,26 +49,25 @@ min-height: 100vh;
 
   .text {
     width: 300px;
-    @include text($primaryFont, 14px, 1.8, 400);
+
     position: relative;
 
 
     span {
-      font-size: 16px;
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;
-
+      @include text($primaryFont, 20px, 1.8, 400);
       &:nth-child(2) {
 
-        @include text($secondaryFont, 50px, 1.2, 700);
+        @include text($primaryFont, 50px, 1.2, 700);
         letter-spacing: 5px;
         @media screen and (max-width: 540px) {
           font-size: 40px;
         }
 
         span {
-          @include text($secondaryFont, 50px, 1.2, 700);
+          @include text($primaryFont, 50px, 1.2, 700);
           letter-spacing: 5px;
           margin-bottom: 10px;
           position: relative;

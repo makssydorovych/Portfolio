@@ -6,38 +6,57 @@
   position: relative;
   background: $bgColor;
   height: 80vh;
-
   .contact h3 {
     margin-bottom: 40px;
   }
-
   .contactContainer {
-
     width: 100%;
     @include container();
     @include flex(column, center, center, nowrap);
   }
-
   .contactForm {
     @include flex(column, flex-start, center, nowrap);
     min-width: 100%;
     margin-top: 60px;
+    .error{
+      color: #c74646;
+      font-size: 18px;
+
+    }
     @media screen and (max-width: 680px) {
       width: 100%;
 
     }
   }
-
+.disabled{
+  background: #1f1f20 !important;
+  min-height: 160px;
+  padding: 15px;
+  resize: none;
+  width: 60%;
+  &:hover{
+    cursor: wait;
+  }
+}
+  .disabledInput{
+    background: #1f1f20 !important;
+    width: 60%;
+    margin-bottom: 1rem;
+    &:hover{
+      cursor: wait;
+    }
+  }
   .contactTextArea {
     min-height: 160px;
     padding: 15px;
     resize: none;
-
+    width: 60%;
   }
 
   .contactInput {
     width: 60%;
     margin-bottom: 1rem;
+    padding: 10px;
     background: $bgSecondColor;
     color: $textColor;
 
@@ -55,7 +74,6 @@
       -webkit-text-fill-color: #495057;
       -webkit-box-shadow: 0 0 0 1000px #252527 inset;
       transition: background-color 5000s ease-in-out 0s;
-
       &:focus {
         border: 2px solid $bgSecondColor;
       }
