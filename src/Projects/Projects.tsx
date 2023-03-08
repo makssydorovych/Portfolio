@@ -6,10 +6,12 @@ import styleContainer from "../common/styles/Container.module.css";
 import todolist from "../assets/images/todo.jpg";
 import hotel from "../assets/images/holidaze.jpg";
 import kidsT from "../assets/images/kids-toys.jpg";
-
+import mus from "../assets/images/museum.jpg";
 
 const Projects = () => {
-
+	const museum = {
+		backgroundImage: `url(${mus})`,
+	};
 	const holidaze = {
 		backgroundImage: `url(${hotel})`,
 	};
@@ -31,8 +33,10 @@ const Projects = () => {
 					<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
 					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
 					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
-					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
-					<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					<Project img={museum} title={"Comunity Sciense Museum"} description={'Comunity Sciense Museum - web site of a local museum aimed at a children\'s audience.' +
+						'Website responsive and have few pages.' +
+						'Site made using only html/css. '} text={'view'} refs={'https://curious-mooncake-971f59.netlify.app/'}/>
+					<Project img={kids} title={"Title"} text={'view'}  refs={'https://makssydorovych.github.io/todoList/'}/>
 				</div>
 			</div>
 

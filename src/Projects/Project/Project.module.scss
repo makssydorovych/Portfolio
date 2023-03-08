@@ -18,7 +18,6 @@
 		margin: 10px 0;
 	}
 	.projectImg {
-
 		background-size: 100%;
 		background-position: center center;
 		height: 200px;
@@ -41,14 +40,12 @@
 
 	.projectTitle {
 		letter-spacing: 1px;
-		margin: 0 0 5px;
-		@include text($primaryFont, 16px, 1.2, 400);
+		margin: 0 0 10px;
+		@include text($primaryFont, 20px, 1.2, 400);
 	}
 	.description {
-		color: $textColor;
-		font-size: 16px;
-		line-height: 1.8;
-		font-family: $secondaryFont;
+		@include text($primaryFont, 18px, 1.2, 400);
+
 	}
 	.projectInfo {
 		padding: 20px;
