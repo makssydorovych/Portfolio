@@ -35,7 +35,7 @@ const Projects = () => {
 					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
 					<Project img={museum} title={"Comunity Sciense Museum"} description={'Comunity Sciense Museum - web site of a local museum aimed at a children\'s audience.' +
 						'Website responsive and have few pages.' +
-						'Site made using only html/css. '} text={'view'} refs={'https://curious-mooncake-971f59.netlify.app/'}/>
+						'Site made using only html/css. '} text={'view'} refs={'https://mellow-rugelach-f45fa8.netlify.app/'}/>
 					<Project img={kids} title={"Title"} text={'view'}  refs={'https://makssydorovych.github.io/todoList/'}/>
 				</div>
 			</div>
