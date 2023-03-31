@@ -28,7 +28,7 @@ const Skills = () => {
                 <Title title={"Skills"}/>
                 <div className={style.skills}>
                     <Skill title={"React / Redux"} icon={react}/>
-                    <Skill title={"JS / TS"} icon={js}/>
+                    <Skill title={"JS / TS1"} icon={js}/>
                     <Skill title={"Css / MaterialUI"} icon={css}/>
                     <Skill title={"Html5"} icon={html5}/>
                     <Skill title={"Sass"} icon={sass}/>
