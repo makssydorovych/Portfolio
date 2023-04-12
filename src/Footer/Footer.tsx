@@ -11,13 +11,13 @@ const Footer = () => {
 					<a className={style.footerItem} href='https://github.com/makssydorovych'>
 						GitHub
 					</a>
-					<a className={style.footerItem} href='#'>
+					<a className={style.footerItem} href='https://www.linkedin.com/in/maksym-sydorovych-4571161a2/'>
 						Linkedin
 					</a>
-					<a className={style.footerItem} href='#'>
-						Facebook
+					<a className={style.footerItem} href='https://www.codewars.com/users/Makssydorovych'>
+						Codewars
 					</a>
-					<a className={style.footerItem} href='#'>
+					<a className={style.footerItem} href='https://t.me/MaksymSyd'>
 						Telegramm
 					</a>
 				</div>

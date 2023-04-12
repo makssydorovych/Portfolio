@@ -1,4 +1,4 @@
-@import "../../common//styles/sass/variables.scss";
+@import "../../common/styles/sass/variables";
 @import "../../common/styles/sass/mixins.scss";
 .project {
 	justify-content: center;
@@ -8,7 +8,10 @@
 	flex-basis: calc(33.33% - 20px);
 	flex-grow: 1;
 	margin: 10px;
+	@media (min-width: 1142px) {
+		max-width: 33.33%;
 
+	}
 	@media (max-width: 1142px) {
 		flex-basis: calc(50% - 20px);
 

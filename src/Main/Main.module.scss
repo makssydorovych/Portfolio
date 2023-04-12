@@ -21,7 +21,7 @@ min-height: 100vh;
       height: 400px;
       width: 300px;
       @include bgSetting();
-      background-image: url("../assets/images/ava.JPG");
+      background-image: url("https://res.cloudinary.com/dkombzxne/image/upload/v1654176691/portfolio/maks_pbn1vd.jpg");
       background-position: 80% 0;
       @media screen and (max-width: 680px) {
         height: 300px;

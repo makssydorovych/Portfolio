@@ -30,13 +30,13 @@ const Projects = () => {
 					<Project img={todo} title={"Todolist"} text={'view'} description={'Todolist - web-app which helping create todolists with tasks.' +
 						' Which you can mark and display completed and active points, add new and delete tasks and todolists.' +
 						'Also implemented authentication with remember user.'} refs={'https://makssydorovych.github.io/todoList/'}/>
-					<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
-					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
-					<Project img={todo} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>
+					{/*<Project img={kids} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>*/}
+					{/*<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/todoList/'}/>*/}
+					<Project img={holidaze} title={"Title"} text={'view'} refs={'https://makssydorovych.github.io/updated_for_portf/'}description={'Holidayz - is a fictional company which displays a number of different establishments in Bergen, Norway. Website built with React.Js/Sass'}/>
 					<Project img={museum} title={"Comunity Sciense Museum"} description={'Comunity Sciense Museum - web site of a local museum aimed at a children\'s audience.' +
 						'Website responsive and have few pages.' +
 						'Site made using only html/css. '} text={'view'} refs={'https://mellow-rugelach-f45fa8.netlify.app/'}/>
-					<Project img={kids} title={"Kids-Toys"} text={'view'}  refs={'https://grand-syrniki-dc20db.netlify.app/'} description={'1Kids-Toys: e-commerce website with product cart and admin section, built using html,sass,bootstrap and js.'}/>
+					<Project img={kids} title={"Kids-Toys"} text={'view'}  refs={'https://grand-syrniki-dc20db.netlify.app/'} description={'Kids-Toys: e-commerce website with product cart and admin section, built using html,sass,bootstrap and js.'}/>
 				</div>
 			</div>
 
