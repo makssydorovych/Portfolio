@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7599c4e8.css",
-    "main.js": "/portfolio/static/js/main.15e5a4f5.js",
-    "static/js/787.b2e1b36e.chunk.js": "/portfolio/static/js/787.b2e1b36e.chunk.js",
+    "main.css": "/portfolio/static/css/main.fae444d6.css",
+    "main.js": "/portfolio/static/js/main.6bf1bd3b.js",
+    "static/js/787.124a14fd.chunk.js": "/portfolio/static/js/787.124a14fd.chunk.js",
     "static/media/museum.jpg": "/portfolio/static/media/museum.37df55450a0512505653.jpg",
+    "static/media/storybook.jpg": "/portfolio/static/media/storybook.fe06ccd840d7c8b3a714.jpg",
+    "static/media/flashcards.jpg": "/portfolio/static/media/flashcards.3458d5f525eb867f47bf.jpg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.097c8cf5282fdacc6152.jpg",
     "static/media/holidaze.jpg": "/portfolio/static/media/holidaze.1fea5a121dfd63472be2.jpg",
     "static/media/kids-toys.jpg": "/portfolio/static/media/kids-toys.50e98f6d8c25ba89a71d.jpg",
     "index.html": "/portfolio/index.html",
-    "main.7599c4e8.css.map": "/portfolio/static/css/main.7599c4e8.css.map",
-    "main.15e5a4f5.js.map": "/portfolio/static/js/main.15e5a4f5.js.map",
-    "787.b2e1b36e.chunk.js.map": "/portfolio/static/js/787.b2e1b36e.chunk.js.map"
+    "main.fae444d6.css.map": "/portfolio/static/css/main.fae444d6.css.map",
+    "main.6bf1bd3b.js.map": "/portfolio/static/js/main.6bf1bd3b.js.map",
+    "787.124a14fd.chunk.js.map": "/portfolio/static/js/787.124a14fd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7599c4e8.css",
-    "static/js/main.15e5a4f5.js"
+    "static/css/main.fae444d6.css",
+    "static/js/main.6bf1bd3b.js"
   ]
 }
