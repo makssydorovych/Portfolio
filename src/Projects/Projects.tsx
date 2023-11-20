@@ -7,13 +7,31 @@ import todolist from "../assets/images/todo.jpg";
 import hotel from "../assets/images/holidaze.jpg";
 import kidsT from "../assets/images/kids-toys.jpg";
 import mus from "../assets/images/museum.jpg";
+import flashcards from '../assets/images/flashcards.jpg'
+import storybook from '../assets/images/storybook.jpg'
 
 const projectData = [
+	{
+		title: "Flashcards",
+		img: { backgroundImage: `url(${flashcards})` },
+		text: "view",
+		refs: "https://flash-cards-liard.vercel.app/login",
+		description:
+			"Todolist - web-app which helping create todolists with tasks. Which you can mark and display completed and active points, add new and delete tasks and todolists. Also implemented authentication with remember user.",
+	},
 	{
 		title: "Todolist",
 		img: { backgroundImage: `url(${todolist})` },
 		text: "view",
 		refs: "https://makssydorovych.github.io/todoList/",
+		description:
+			"Todolist - web-app which helping create todolists with tasks. Which you can mark and display completed and active points, add new and delete tasks and todolists. Also implemented authentication with remember user.",
+	},
+	{
+		title: "Storybook",
+		img: { backgroundImage: `url(${storybook})` },
+		text: "view",
+		refs: "https://storybook-deploy-flash-cards-liard.vercel.app/?path=/docs/components-button--docs",
 		description:
 			"Todolist - web-app which helping create todolists with tasks. Which you can mark and display completed and active points, add new and delete tasks and todolists. Also implemented authentication with remember user.",
 	},
